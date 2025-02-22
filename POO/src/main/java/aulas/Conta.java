@@ -1,13 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package aulas;
 
-/**
- *
- * @author Cliente
- */
+
 public class Conta {
+    
+    
+    private double saldo;
+    private String nome;
+    
+    public double getSaldo(){
+        
+        return this.saldo;
+        
+    }
+    
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+        
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public void depositar(double valor, int percentual){
+        this.saldo = this.saldo + valor  + (valor *  percentual/100);
+    }
+    
     
 }
