@@ -15,11 +15,15 @@ public class UseConta {
     public static void main(String[] args) {
         Conta conta1 = new Conta();
        // Conta conta2 = new Conta();
+        Scanner scan = new Scanner(System.in);
         
-        conta1.setNome("Carlos");
+        System.out.println("Digite seu nome: ");
+        String nome = scan.nextLine();
+        
+        
+        conta1.setNome(nome);
       //  conta2.setNome("Felipe");
         
-        Scanner scan = new Scanner(System.in);
         
         System.out.println("Digite o valor a ser depositado!");
         double valor = scan.nextDouble();
