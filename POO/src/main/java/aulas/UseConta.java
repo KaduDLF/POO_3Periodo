@@ -12,6 +12,13 @@ import java.util.Scanner;
  */
 public class UseConta {
     
+    public static void menu(){
+        System.out.println("    --------- menu  ---------");
+        System.out.println(" 0 -  sair ");
+        System.out.println(" 1 -  Operarr ");
+        System.out.println("escolha um numero     ");
+    }
+    
     public static void main(String[] args) {
         Conta conta1 = new Conta();
        // Conta conta2 = new Conta();
@@ -23,19 +30,37 @@ public class UseConta {
         
         conta1.setNome(nome);
       //  conta2.setNome("Felipe");
+      
         
         
-        System.out.println("Digite o valor a ser depositado!");
-        double valor = scan.nextDouble();
+        menu();
+        int numero = scan.nextInt();
         
-        System.out.println("Digite a porcentagem que você Quer!");
-        int porcentagem = scan.nextInt();
+        while(numero != 0 ){
+            
+            switch(numero){
+                    case 1:
+                        System.out.println("Digite o valor a ser depositado!");
+                        double valor = scan.nextDouble();
         
-        conta1.depositar(valor,porcentagem);
+                        System.out.println("Digite a porcentagem que você Quer!");
+                        int porcentagem = scan.nextInt();
+        
+                        conta1.depositar(valor,porcentagem);
+                        System.out.println("Conta 1: " + conta1.getNome() + " - R$"  + conta1.getSaldo());
+                        
+                        break;
+                    default:
+                        System.out.println("Valor invalido!");
+                        break;
+            }
+            menu();
+            numero = scan.nextInt();
+             
+        }
         
         
         
-        System.out.println("Conta 1: " + conta1.getNome() + " - R$"  + conta1.getSaldo());
    //     System.out.println("Conta 2: " + conta2.getNome() + " - R$"  + conta2.getSaldo());
     }
 }
