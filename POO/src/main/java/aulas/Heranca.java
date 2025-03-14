@@ -4,10 +4,6 @@
  */
 package aulas;
 
-/**
- *
- * @author Cliente
- */
 public class Heranca {
     
 }
