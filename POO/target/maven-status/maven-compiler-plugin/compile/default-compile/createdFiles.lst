@@ -4,4 +4,8 @@ aulas\Usuario.class
 exercicioIMC\CalculoIMC.class
 exercicioIMC\Main.class
 exercicioIMC\Pessoa.class
+aulas\Pessoa.class
+aulas\Fornecedor.class
+aulas\Cliente.class
 aulas\Conta.class
+aulas\Heranca.class
