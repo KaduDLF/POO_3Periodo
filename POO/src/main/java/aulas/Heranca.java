@@ -61,6 +61,7 @@ public class Heranca {
          
          scan.nextLine();
 
+         scan.close();
 
 
 
