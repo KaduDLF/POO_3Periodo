@@ -10,6 +10,25 @@ package aulas;
  */
 public class Cliente extends Pessoa {
     private String cpf;
+    private float salario, ir;
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    public float getIr() {
+        return ir;
+    }
+
+    public void setIr(float ir) {
+        this.ir = ir;
+    }
+    
+    
 
     public String getCpf() {
         return cpf;
@@ -25,5 +44,9 @@ public class Cliente extends Pessoa {
         System.out.println("A idade do cliente :" + getIdade());
         System.out.println("O endereço do cliente :" + getEndereco());
         
+    }
+    
+    public float valorSalario(){
+        return this.salario - ir;
     }
 }

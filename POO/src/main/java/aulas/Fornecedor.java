@@ -11,6 +11,26 @@ package aulas;
 public class Fornecedor extends Pessoa {
     
     private String cnpj;
+    private int valProduto;
+    private int imposto;
+
+    public float getValProduto() {
+        return valProduto;
+    }
+
+    public void setValProduto(int valProduto) {
+        this.valProduto = valProduto;
+    }
+
+    public int getImposto() {
+        return imposto;
+    }
+
+    public void setImposto(int imposto) {
+        this.imposto = imposto;
+    }
+    
+    
 
     public String getCnpj() {
         return cnpj;
@@ -26,5 +46,9 @@ public class Fornecedor extends Pessoa {
         System.out.println("A idade do Fornecedor: " + getIdade());
         System.out.println("O endereço do Fornecedor: " + getEndereco());
     }
-    
+    public float valorProdutoImp() {
+        float impostoCalculado = (this.imposto / 100.0f) + 1; 
+        return this.valProduto * impostoCalculado;
+    }
+
 }

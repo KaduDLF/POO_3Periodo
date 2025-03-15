@@ -6,7 +6,8 @@ package aulas;
 
 
 public class Pessoa {
-    private String nome,idade,endereco;
+    private String nome,idade,endereco,sexo,cor;
+    
     
     public Pessoa(){}
     
@@ -15,6 +16,24 @@ public class Pessoa {
         this.idade = idade;
         this.nome = nome;
     }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+    
+    
 
     public String getNome() {
         return nome;
