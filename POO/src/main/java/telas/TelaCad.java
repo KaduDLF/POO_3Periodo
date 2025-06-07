@@ -48,12 +48,30 @@ public class TelaCad {
         oJFrameInicial.add(rzSocial);
         
         JLabel tipo = new JLabel("Tipo:");
-        tipo.setBounds(10,70,120,25);
+        tipo.setBounds(10,70,50,25);
         tipo.setHorizontalAlignment(JLabel.RIGHT);
         oJFrameInicial.add(tipo);
+        
+        JComboBox<String> oJComboBox = new JComboBox<>();
+        oJComboBox.setBounds(80, 70, 120, 25);
+        oJComboBox.addItem("");
+        oJComboBox.addItem("LTDA");
+        oJComboBox.addItem("MEI");
+        oJFrameInicial.add(oJComboBox);
+        
+        JLabel oJLabelDataFund = new JLabel("Dt Fund:");
+        oJLabelDataFund.setBounds(10, 100, 60, 25);
+        oJLabelDataFund.setHorizontalAlignment(JLabel.RIGHT);
+        oJFrameInicial.add(oJLabelDataFund);
 
+        JFormattedTextField oJTextFieldDataFund = new JFormattedTextField(mascara("##/##/####"));
+
+        oJTextFieldDataFund.setBounds(80, 100, 120, 25);
+        oJTextFieldDataFund.setLayout(null);
+        oJFrameInicial.add(oJTextFieldDataFund);
 
         oJFrameInicial.setVisible(true);
+        
         
         
     }
