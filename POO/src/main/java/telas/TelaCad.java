@@ -69,6 +69,8 @@ public class TelaCad {
         oJTextFieldDataFund.setBounds(80, 100, 120, 25);
         oJTextFieldDataFund.setLayout(null);
         oJFrameInicial.add(oJTextFieldDataFund);
+        
+        // add Scroll
 
         oJFrameInicial.setVisible(true);
         
